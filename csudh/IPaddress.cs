@@ -18,17 +18,7 @@ namespace csudh
             this.ipaddress = ipaddress;
         }
 
-        public static string Domain(string domain, int index)
-        {
-            string[] parts = domain.Split('.');
-            if (index < 1 || index > parts.Length)
-            {
-                return "nincs";
-            }
-
-            return parts[parts.Length - index];
-        }
-
+      
         public IPaddress(string sor)
         {
             string[] darabok = sor.Split(';');
